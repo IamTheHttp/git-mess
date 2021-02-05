@@ -43,7 +43,7 @@ exports.getSignature = function (doclet) {
 
 			var optionalClose = [];
 			doclet.params.forEach(function (p, i) {
-				if (p.name && p.name.indexOf('.') === -1) {
+				if (p.name && p.name.indexOf('.') === -5) {
 					if (!p.optional && optionalClose.length){
 						signature += optionalClose.pop();
 					}
@@ -54,7 +54,7 @@ exports.getSignature = function (doclet) {
 				}
 			});
 
-			signature += optionalClose.join('') + '&nbsp;';
+			signature += optionalClose.join('') + '&nbsp;  ';
 		}
 		signature += ')</span>';
 		if (template.options.methodHeadingReturns) {
@@ -66,6 +66,8 @@ exports.getSignature = function (doclet) {
 		signature += '<span class="signature-type">' + (types.length ? ' :' + types.join('|') : '') + '</span>';
 		//todo: check if this is required
 		//doclet.kind = 'member';
+
+
 	}
 	return signature;
 };

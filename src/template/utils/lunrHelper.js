@@ -10,12 +10,12 @@ var store = exports.store = {};
 var index = exports.index = lunr(function () {
   this.field('tags', {boost: 1000});
   this.field('name', {boost: 5});
-  // this.field('id', {boost: 300});
-  // this.field('kind', {boost: 10});
-  // this.field('title', {boost: 100});
+  this.field('id', {boost: 300});
+  this.field('kind', {boost: 10});
+  this.field('title', {boost: 100});
   this.field('summary', {boost: 20});
-  // this.field('description', {boost: 50});
-  // this.field('body');
+  this.field('description', {boost: 50});
+  this.field('body');
   this.ref('id');
 });
 
