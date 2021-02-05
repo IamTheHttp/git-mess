@@ -10,7 +10,7 @@ var extend = require('extend');
 var moment = require('moment');
 
 var kinds = exports.kinds = {
-	custom: ['readme', 'global', 'source', 'tutorial', 'list'],
+	custom: ['readme', 'global'],
 	pages: ['readme', 'global', 'source', 'tutorial', 'list', 'class', 'external', 'mixin', 'module', 'namespace', 'interface'],
 	symbols: ['tutorial', 'class', 'external', 'event', 'mixin', 'module', 'namespace', 'interface', 'member', 'function', 'constant', 'typedef'],
 	global: ['member', 'function', 'constant', 'typedef']
