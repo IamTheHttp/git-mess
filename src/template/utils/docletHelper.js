@@ -15,6 +15,9 @@ var getLinkText = exports.getLinkText = function(doclet){
 		if ("event" === doclet.kind) {
 			text = text.replace("event:", "");
 		}
+    if ("event" === doclet.kind) {
+      text = text.replace("event:", "");
+    }
 		if ("module" === doclet.kind){
 			text = text.split('>').pop();
 		}
