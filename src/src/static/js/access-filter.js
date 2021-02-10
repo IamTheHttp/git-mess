@@ -14,6 +14,9 @@
 
 	$.extend(AccessFilter.prototype, {
 		init: function(){
+
+
+
 			var self = this;
 			self.$toggleInherited = $(".access-filter .toggle-inherited").on('change', {self: self}, self.onInheritedChanged);
 			self.setInherited();

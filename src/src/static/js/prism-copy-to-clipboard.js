@@ -13,6 +13,9 @@
 
 	if (!Clipboard && typeof require === 'function') {
 		Clipboard = require('clipboard');
+
+
+
 	}
 
 	var callbacks = [];
